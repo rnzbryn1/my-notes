@@ -1,5 +1,7 @@
-.main-view-notes {
-    padding: 20px;  
+.main-view-notes {  
     text-align: center;
-    background-color: #ffffff;
+    background-color: hsl(0, 14%, 80%);
+    position: fixed;
+    width: 100%;
+    left: 0;
 }

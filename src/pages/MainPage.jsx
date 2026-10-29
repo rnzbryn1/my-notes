@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "../shared/components/Header";
 import Footer from "../shared/components/Footer";
-import ViewNotes from "../components/MainPage/ViewNotes";
+import "../styles/pages/MainPage.css";
+import {Outlet} from "react-router-dom";
 
-const MainPage = () => {
+function MainPage() {
   return (
-    <div>
-      <ViewNotes className="main-view-notes" />
+    <div className="main-page">
       <Header className="main-header" />
+      <Outlet />
       <Footer className="main-footer" />
     </div>
   );
-};
+}
 
 export default MainPage;
